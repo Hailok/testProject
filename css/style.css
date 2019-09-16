@@ -466,9 +466,22 @@ table {
 }
 
 @media (max-width: 1024px) {
+  .about-me__inline-wrap {
+    margin-top: 42px;
+    margin-bottom: 120px;
+  }
   .about-me__man-mobile {
-    margin-left: 0;
+    margin-left: 3px;
     margin-top: -20px;
+  }
+  .about-me__content-wrap {
+    margin-left: 29px;
+  }
+  .about-me__sign-up-button {
+    margin-top: 22px;
+  }
+  .about-me__inline-wrap_grid {
+    margin-top: 41px;
   }
 }
 
@@ -512,7 +525,7 @@ table {
 
 @media (max-width: 1024px) {
   .requrements {
-    padding: 130px 0 135px 0;
+    padding: 135px 0;
   }
   .requrements__inline-wrap {
     display: -webkit-box;
@@ -522,7 +535,7 @@ table {
     padding: 0 0 0 4px;
   }
   .requrements__man-laptop {
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 55px;
   }
 }
@@ -635,6 +648,12 @@ table {
 
 .sign-up__subtitle {
   margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .sign-up {
+    padding: 75px 0 135px 0;
+  }
 }
 
 .footer {

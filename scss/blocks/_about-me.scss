@@ -67,9 +67,28 @@
 
 @media (max-width: 1024px) {
     .about-me {
+        &__inline-wrap {
+            margin-top: 42px;
+            margin-bottom: 120px;
+        }
+
         &__man-mobile {
-            margin-left: 0;
+            margin-left: 3px;
             margin-top: -20px;
+        }
+
+        &__content-wrap {
+            margin-left: 29px;
+        }
+
+        &__sign-up-button {
+            margin-top: 22px;
+        }
+        
+        &__inline-wrap {
+            &_grid {
+                margin-top: 41px;
+            }
         }
     }
 }

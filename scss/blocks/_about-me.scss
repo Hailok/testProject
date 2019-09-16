@@ -1,0 +1,75 @@
+.about-me {
+    background: $backgroundColor;
+    padding: 135px 0 140px 0;
+
+    .heading-2 {
+        text-align: center;
+    }
+
+    .paragraph-2 {
+        margin-top: 5px;
+        color: $paragraphColor;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__inline-wrap {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 75px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 30px;
+            margin-top: 43px;
+        }
+    }
+
+    &__man-mobile {
+        margin-left: 37px;
+        margin-top: 3px;
+    }
+
+    &__content-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: 65px;
+    }
+
+    &__sign-up-button {
+        margin-top: 15px;
+        @include font($secondaryFont, 700, 1.375rem, 1, $primaryColor);
+        text-decoration: none;
+        transition: 0.3s color;
+
+        &:hover {
+            color: $primaryColorAlternativeHover;
+        }
+    }
+
+    &__web-tool-wrap {
+        padding-top: 4px;
+    }
+
+    &__web-tool-title {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-me {
+        &__man-mobile {
+            margin-left: 0;
+            margin-top: -20px;
+        }
+    }
+}

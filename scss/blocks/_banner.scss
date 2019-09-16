@@ -1,0 +1,43 @@
+.banner {
+    background: url(../imgs/banner-bg/banner-bg-2560x676.jpg) center center / cover no-repeat;
+    padding: 130px 0 141px 0;
+
+    .heading-1 {
+        color: #fff;
+    }
+
+    &__content-wrap {
+        width: 47%;
+    }
+
+    &__text {
+        @include font($secondaryFont, 400, 1.25rem, 26px, #fff);
+        margin-top: 20px;
+    }
+
+    &__button {
+        background-color: $primaryColor;
+        color: #fff;
+        margin-top: 35px;
+        transition: 0.3s background-color;
+
+        &:hover {
+            background-color: $primaryColorAlternativeHover;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        background: url(../imgs/banner-bg/banner-bg-1204x723.jpg) center center / cover no-repeat;
+        padding: 133px 0 158px 0;
+
+        &__content-wrap {
+            width: 49%;
+        }
+
+        &__button {
+            margin-top: 38px;
+        }
+    }
+}

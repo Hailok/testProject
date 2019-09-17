@@ -84,3 +84,9 @@
         }
     }
 }
+
+@media (max-width: $mobilePoint) {
+    .current-user {
+        padding-left: 15px;
+    }
+}

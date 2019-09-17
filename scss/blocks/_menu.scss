@@ -1,6 +1,7 @@
 .menu {
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
 
     li {
         margin-right: 30px;
@@ -26,8 +27,18 @@
     }
 }
 
+@media (max-width: $tabletPoint) {
+    .menu {
+        &__sign-out-button {
+            display: block;
+        }
+    }
+}
+
 @media (max-width: $mobilePoint) {
     .menu {
+        margin-left: 15px;
+
         li {
             margin-right: 0;
         }

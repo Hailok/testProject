@@ -1,6 +1,6 @@
 .sign-up {
     background: $backgroundColor;
-    padding: 75px 0 149px 0;
+    padding: 75px 0 147px 0;
 
     &__container {
         display: flex;
@@ -10,6 +10,7 @@
 
     &__subtitle {
         margin-top: 10px;
+        text-align: center;
     }
 }
 
@@ -24,10 +25,7 @@
         padding: 53px 0 108px 0;
 
         &__subtitle {
-            margin-top: 20px;
-            padding: 0;
-            line-height: 24px;
-            text-align: center;
+            padding: 0 160px;
         }
     }
 }
@@ -38,6 +36,7 @@
 
         &__subtitle {
             margin-top: 10px;
+            padding: 0;
             line-height: 22px;
         }
     }

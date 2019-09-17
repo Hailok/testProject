@@ -172,6 +172,7 @@ table {
 .container {
   margin: 0 auto;
   max-width: 1170px;
+  min-width: 320px;
   padding: 0 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -246,7 +247,22 @@ table {
           justify-content: space-between;
 }
 
+.nav__aside-wrap-background {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.nav__menu-toggle {
+  display: none;
+}
+
 @media (max-width: 960px) {
+  .nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .nav__aside-wrap {
     background: #fff;
     display: -webkit-box;
@@ -297,6 +313,18 @@ table {
         -ms-flex-order: -1;
             order: -1;
   }
+  .nav__menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 710px) {
+  .nav__aside-wrap {
+    width: 250px;
+  }
+  .nav__menu {
+    padding: 32px 0;
+  }
 }
 
 .logo {
@@ -319,6 +347,7 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: 30px;
 }
 
 .menu li {
@@ -349,7 +378,16 @@ table {
   display: none;
 }
 
+@media (max-width: 960px) {
+  .menu__sign-out-button {
+    display: block;
+  }
+}
+
 @media (max-width: 710px) {
+  .menu {
+    margin-left: 15px;
+  }
   .menu li {
     margin-right: 0;
   }
@@ -466,6 +504,12 @@ table {
   }
 }
 
+@media (max-width: 710px) {
+  .current-user {
+    padding-left: 15px;
+  }
+}
+
 .banner {
   background: url(../imgs/banner-bg/banner-bg-2560x676.jpg) center center/cover no-repeat;
   padding: 130px 0 141px 0;
@@ -508,6 +552,9 @@ table {
   .banner__content-wrap {
     width: 49%;
   }
+  .banner__text {
+    padding-right: 5px;
+  }
   .banner__button {
     margin-top: 38px;
   }
@@ -549,7 +596,7 @@ table {
 
 .about-me {
   background: #fff;
-  padding: 135px 0 140px 0;
+  padding: 135px 0 145px 0;
 }
 
 .about-me .heading-2 {
@@ -610,6 +657,10 @@ table {
   margin-left: 65px;
 }
 
+.about-me__content-title {
+  margin-top: 2px;
+}
+
 .about-me__content-text {
   margin-top: 5px;
 }
@@ -630,6 +681,10 @@ table {
   color: #fc831f;
 }
 
+.about-me__heading-2 {
+  padding: 0 300px;
+}
+
 .about-me__web-tool-wrap {
   padding-top: 4px;
 }
@@ -639,6 +694,9 @@ table {
 }
 
 @media (max-width: 1200px) {
+  .about-me {
+    padding: 135px 0 139px 0;
+  }
   .about-me__inline-wrap {
     margin-top: 42px;
     margin-bottom: 120px;
@@ -655,6 +713,9 @@ table {
   }
   .about-me__inline-wrap_grid {
     margin-top: 41px;
+  }
+  .about-me__heading-2 {
+    padding: 0 170px;
   }
   .about-me__web-tool-describe {
     margin-top: 7px;
@@ -685,6 +746,9 @@ table {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-row-gap: 35px;
+  }
+  .about-me__heading-2 {
+    padding: 0 50px;
   }
   .about-me__web-tool-wrap {
     display: -webkit-box;
@@ -755,6 +819,9 @@ table {
   .about-me__sign-up-button {
     margin-top: 20px;
   }
+  .about-me__heading-2 {
+    padding: 0;
+  }
   .about-me__web-tool-wrap {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -778,7 +845,7 @@ table {
 
 .requrements {
   background: url(../imgs/third-block-bg/third-block-bg-2560x692.jpg) center center/cover no-repeat;
-  padding: 135px 0 100px 0;
+  padding: 135px 0 102px 0;
 }
 
 .requrements .heading-2 {
@@ -842,7 +909,7 @@ table {
     padding: 115px 0 120px 0;
   }
   .requrements__title {
-    padding: 0 180px;
+    padding: 0 130px;
   }
   .requrements__man-laptop {
     display: none;
@@ -897,7 +964,7 @@ table {
 
 .users {
   background: #fff;
-  padding: 140px 0 80px 0;
+  padding: 135px 0 80px 0;
 }
 
 .users .container {
@@ -930,7 +997,7 @@ table {
 .users__button {
   border: 2px solid #ef6c00;
   color: #ef6c00;
-  margin-top: 50px;
+  margin-top: 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
@@ -949,6 +1016,9 @@ table {
   .users__users-list {
     grid-row-gap: 40px;
     grid-column-gap: 20px;
+  }
+  .users__button {
+    margin-top: 50px;
   }
 }
 
@@ -1041,7 +1111,7 @@ table {
 
 .sign-up {
   background: #fff;
-  padding: 75px 0 149px 0;
+  padding: 75px 0 147px 0;
 }
 
 .sign-up__container {
@@ -1059,6 +1129,7 @@ table {
 
 .sign-up__subtitle {
   margin-top: 10px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -1072,10 +1143,7 @@ table {
     padding: 53px 0 108px 0;
   }
   .sign-up__subtitle {
-    margin-top: 20px;
-    padding: 0;
-    line-height: 24px;
-    text-align: center;
+    padding: 0 160px;
   }
 }
 
@@ -1085,6 +1153,7 @@ table {
   }
   .sign-up__subtitle {
     margin-top: 10px;
+    padding: 0;
     line-height: 22px;
   }
 }
@@ -1126,6 +1195,8 @@ table {
 
 .footer__hr {
   margin: 30px 0 25px 0;
+  border: 0;
+  border-bottom: 1px solid #5674b9;
 }
 
 .footer__contacts {
@@ -1133,7 +1204,7 @@ table {
   display: grid;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-row-gap: 16px;
+  grid-row-gap: 18px;
 }
 
 .footer__contact-wrap {
@@ -1314,7 +1385,7 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 5px;
+    margin: 5px 0 0 0;
   }
   .footer__menu li {
     margin-top: 9px;

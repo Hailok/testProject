@@ -29,12 +29,14 @@
 
     &__hr {
         margin: 30px 0 25px 0;
+        border: 0;
+        border-bottom: 1px solid #5674b9;
     }
 
     &__contacts {
         display: grid;
         grid-template-rows: 1fr;
-        grid-row-gap: 16px;
+        grid-row-gap: 18px;
     }
 
     &__contact-wrap {
@@ -185,7 +187,7 @@
         &__menu {
             flex-direction: column;
             align-items: center;
-            margin-top: 5px;
+            margin: 5px 0 0 0;
 
             li {
                 margin-top: 9px;

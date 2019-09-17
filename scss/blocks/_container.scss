@@ -16,3 +16,9 @@
         padding: 0 23px;
     }
 }
+
+@media (max-width: $mobilePoint) {
+    .container {
+        padding: 0 15px;
+    }
+}

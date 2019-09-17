@@ -26,8 +26,10 @@
     }
 }
 
-@media (max-width: $tabletPoint) {
+@media (max-width: $mobilePoint) {
     .menu {
-        
+        li {
+            margin-right: 0;
+        }
     }
 }

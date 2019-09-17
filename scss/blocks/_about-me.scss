@@ -28,7 +28,7 @@
         &_grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 30px;
+            grid-column-gap: 30px;
             margin-top: 43px;
         }
     }
@@ -44,7 +44,7 @@
         margin-left: 65px;
     }
 
-    &__text {
+    &__content-text {
         margin-top: 5px;
     }
 
@@ -121,7 +121,7 @@
             margin-left: 30px;
         }
 
-        &__text {
+        &__content-text {
             margin-top: 11px;
         }
 
@@ -154,6 +154,73 @@
 
         &__web-tool-describe {
             margin-top: 7px;
+        }
+    }
+}
+
+@media (max-width: $mobilePoint) {
+    .about-me {
+        padding: 65px 0 70px 0;
+
+        &__man-mobile {
+            margin: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__inline-wrap {
+            margin-top: 0px;
+            margin-bottom: 70px;
+            flex-direction: column;
+        }
+
+        &__web-tool-wrap {
+            flex-direction: column;
+            padding-left: 0;
+        }
+
+        &__content-wrap {
+            margin-left: 0;
+            align-items: center;
+        }
+
+        &__content-title {
+            margin-top: 5px;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        &__content-text {
+            text-align: center;
+        }
+
+        &__sign-up-button {
+            margin-top: 20px;
+        }
+
+        &__web-tool-wrap {
+            align-items: center;
+        }
+        
+        &__inline-wrap {
+            &_grid {
+                grid-row-gap: 18px;
+                margin-top: 20px;
+            }
+        }
+
+        &__web-tool-info {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        &__web-tool-title {
+            margin-top: 2px;
+        }
+
+        &__web-tool-describe {
+            margin-top: 6px;
         }
     }
 }

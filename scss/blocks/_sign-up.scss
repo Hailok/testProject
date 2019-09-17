@@ -25,8 +25,20 @@
 
         &__subtitle {
             margin-top: 20px;
-            width: 365px;
+            padding: 0;
             line-height: 24px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: $mobilePoint) {
+    .sign-up {
+        padding: 30px 0 310px 0;
+
+        &__subtitle {
+            margin-top: 10px;
+            line-height: 22px;
         }
     }
 }

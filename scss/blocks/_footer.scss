@@ -174,3 +174,45 @@
         }
     }
 }
+
+@media (max-width: $mobilePoint) {
+    .footer {
+        &__inline-wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        &__menu {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 5px;
+
+            li {
+                margin-top: 9px;
+            }
+        }
+
+        &__links-map {
+            display: none;
+        }
+
+        &__contact-value {
+            justify-content: center;
+        }
+
+        &__contacts {
+            grid-row-gap: 17px;
+            margin-top: 5px;
+        }
+
+        &__social-networks {
+            //grid-column-gap: 22px;
+            margin-top: 29px;
+        }
+
+        &__copyright {
+            order: 1;
+            margin-top: 13px;
+        }
+    }
+}

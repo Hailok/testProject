@@ -25,3 +25,22 @@
         margin-top: 5px
     }
 }
+
+@media (max-width: $tabletPoint) {
+    .user-card {
+        flex-direction: column;
+        align-items: center;
+
+        &__info {
+            text-align: center;
+        }
+
+        &__name {
+            margin-top: 10px;
+        }
+
+        &__position {
+            line-height: 15px;
+        }
+    }
+}

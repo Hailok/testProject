@@ -13,8 +13,20 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopPoint) {
     .sign-up {
         padding: 75px 0 135px 0;
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .sign-up {
+        padding: 53px 0 108px 0;
+
+        &__subtitle {
+            margin-top: 20px;
+            width: 365px;
+            line-height: 24px;
+        }
     }
 }

@@ -1,5 +1,5 @@
 .requrements {
-    background: url(../imgs/third-block-bg/third-block-bg-1024x755.jpg) center center / cover no-repeat;
+    background: url(../imgs/third-block-bg/third-block-bg-2560x692.jpg) center center / cover no-repeat;
     padding: 135px 0 100px 0;
 
     .heading-2 {
@@ -16,6 +16,10 @@
         align-items: center;
     }
 
+    &__title {
+        text-align: center;
+    }
+
     &__inline-wrap {
         display: flex;
         margin-top: 40px;
@@ -25,15 +29,18 @@
     &__man-laptop {
         margin-left: 100px;
     }
+
+    &__man-laptop_tablet {
+        display: none;
+    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopPoint) {
     .requrements {
-        padding: 135px 0;
+        background: url(../imgs/third-block-bg/third-block-bg-1024x755.jpg) center center / cover no-repeat;
+        padding: 134px 0;
 
         &__inline-wrap {
-            display: flex;
-            margin-top: 40px;
             padding: 0 0 0 4px;
         }
 
@@ -43,3 +50,30 @@
         }
     }
 }
+
+@media (max-width: $tabletPoint) {
+    .requrements {
+        background: url(../imgs/third-block-bg/third-block-bg-768x878.jpg) center center / cover no-repeat;
+        padding: 115px 0 120px 0;
+
+        &__title {
+            width: 415px;
+        }
+
+        &__man-laptop {
+            display: none;
+            margin-top: 0;
+            margin-left: 45px;
+        }
+    
+        &__man-laptop_tablet {
+            display: block;
+        }
+
+        &__inline-wrap {
+            display: flex;
+            margin-top: 35px;
+        }
+    }
+}
+

@@ -27,7 +27,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopPoint) {
     .banner {
         background: url(../imgs/banner-bg/banner-bg-1204x723.jpg) center center / cover no-repeat;
         padding: 133px 0 158px 0;
@@ -38,6 +38,23 @@
 
         &__button {
             margin-top: 38px;
+        }
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .banner {
+        background: url(../imgs/banner-bg/banner-bg-768x622.jpg) center center / cover no-repeat;
+        padding: 110px 0 118px 0;
+
+        &__content-wrap {
+            width: 55%;
+        }
+
+        &__text {
+            font-size: 1.125rem;
+            line-height: 24px;
+            margin-top: 20px;
         }
     }
 }

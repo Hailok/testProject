@@ -5,8 +5,14 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopPoint) {
     .container {
         padding: 0 45px;
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .container {
+        padding: 0 23px;
     }
 }

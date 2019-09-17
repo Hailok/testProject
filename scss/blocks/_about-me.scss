@@ -7,7 +7,6 @@
     }
 
     .paragraph-2 {
-        margin-top: 5px;
         color: $paragraphColor;
     }
 
@@ -45,6 +44,10 @@
         margin-left: 65px;
     }
 
+    &__text {
+        margin-top: 5px;
+    }
+
     &__sign-up-button {
         margin-top: 15px;
         @include font($secondaryFont, 700, 1.375rem, 1, $primaryColor);
@@ -65,7 +68,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopPoint) {
     .about-me {
         &__inline-wrap {
             margin-top: 42px;
@@ -89,6 +92,68 @@
             &_grid {
                 margin-top: 41px;
             }
+        }
+
+        &__web-tool-describe {
+            margin-top: 7px;
+        }
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .about-me {
+        padding: 111px 0 108px 0;
+
+        &__inline-wrap {
+            margin-bottom: 135px;
+        }
+
+        &__man-mobile {
+            margin-left: 0px;
+            margin-top: -30px;
+            
+            svg {
+                width: 219px;
+            }
+        }
+
+        &__content-wrap {
+            margin-left: 30px;
+        }
+
+        &__text {
+            margin-top: 11px;
+        }
+
+        &__inline-wrap {
+            &_grid {
+                grid-template-columns: 1fr;
+                grid-row-gap: 35px;
+            }
+        }
+
+        &__web-tool-wrap {
+            display: flex;
+            padding-top: 0;
+            padding-left: 65px;
+        }
+
+        &__web-tool-img {
+            svg {
+                width: 88px;
+            }
+        }
+
+        &__web-tool-info {
+            margin-left: 35px;
+        }
+
+        &__web-tool-title {
+            margin-top: 0;
+        }
+
+        &__web-tool-describe {
+            margin-top: 7px;
         }
     }
 }

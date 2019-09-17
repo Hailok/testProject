@@ -26,7 +26,7 @@
         margin-right: 15px;
     }
 
-    &__sing-out-button {
+    &__sign-out-button {
         cursor: pointer;
         padding-top: 4px;
 
@@ -48,6 +48,39 @@
                     fill-opacity: 0.5;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .current-user {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 25px 25px 25px;
+
+        &__avatar {
+            width: 67px;
+            height: 67px;
+            order: -1;
+        }
+
+        &__text-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 16px;
+        }
+        
+        &__name {
+            font-size: 1.25rem;
+        }
+    
+        &__email {
+            font-size: 0.8125rem;
+            margin-top: 8px;
+        }
+
+        &__sign-out-button {
+            display: none;
         }
     }
 }

@@ -20,4 +20,14 @@
             color: $primaryColor;
         }
     }
+
+    &__sign-out-button {
+        display: none;
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .menu {
+        
+    }
 }

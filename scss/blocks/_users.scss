@@ -34,13 +34,29 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopPoint) {
     .users {
         padding: 135px 0 80px 0; 
 
         &__users-list {
             grid-row-gap: 40px;
             grid-column-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: $tabletPoint) {
+    .users {
+        padding: 115px 0 80px 0; 
+
+        &__users-list {
+            grid-row-gap: 20px;
+            grid-column-gap: 10px;
+            margin-top: 38px;
+        }
+
+        &__button {
+            margin-top: 55px;
         }
     }
 }

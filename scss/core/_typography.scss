@@ -33,14 +33,14 @@
 }
 
 //tablet
-@media (max-width: 1024px) {
+@media (max-width: $tabletPoint) {
     .heading-1 {
-        //@include font($primaryFont, 600, 2.625rem, 51px);
+        @include font($primaryFont, 600, 2.625rem, 51px);
     }
 }
 
 //mobile
-@media (max-width: 767px) {
+@media (max-width: $mobilePoint) {
     .heading-1 {
         @include font($primaryFont, 600, 1.875rem, 36px);
     }
